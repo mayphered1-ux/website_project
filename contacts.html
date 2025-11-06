@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    .contact-section {
+      max-width: 700px;
+      margin: 100px auto;
+      padding: 0 20px;
+      position: relative;
+    }
+
+    /* Top Button */
+    .top-btn {
+      position: absolute;
+      top: -50px;
+      right: 0;
+      background-color: #eaeaea;
+      color: #000;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .top-btn:hover {
+      background-color: #ccc;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 25px;
+    }
+
+    .contact-info {
+      margin-bottom: 40px;
+    }
+
+    .contact-info div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 15px;
+    }
+
+    .contact-info i {
+      font-size: 20px;
+      margin-right: 15px;
+      color: #f5f5f5;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      background: #fff;
+      border: none;
+      border-radius: 2px;
+      font-size: 15px;
+      color: #000;
+    }
+
+    form textarea {
+      resize: none;
+      height: 120px;
+    }
+
+    button {
+      width: fit-content;
+      background-color: #eaeaea;
+      color: #000;
+      border: none;
+      padding: 10px 25px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    button:hover {
+      background-color: #ccc;
+    }
+
+    button i {
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        margin: 60px 20px;
+      }
+      .top-btn {
+        position: static;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <section class="contact-section">
+    <a href="project_1.html" class="top-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+
+    <h2>Contact Me</h2>
+
+    <div class="contact-info">
+      <div><i class="fas fa-map-marker-alt"></i> Philippines, Digos</div>
+      <div><i class="fas fa-phone"></i> Phone:639306441846 </div>
+      <div><i class="fas fa-envelope"></i> Email: mayphered1@gmail.com</div>
+    </div>
+
+    <p>Tell me if there's something wrong. Send me a message:</p>
+
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject">
+      <textarea placeholder="Message"></textarea>
+      <button type="submit"><i class="fas fa-paper-plane"></i> SEND MESSAGE</button>
+    </form>
+  </section>
+
+</body>
+</html>
+ 
